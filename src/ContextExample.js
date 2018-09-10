@@ -25,7 +25,10 @@ const ContextExample = ({ data, comparators }) => (
       wrap it with our getData() HOC, we'd get propType warnings. We don't
       want to relax our APIs requirements just because of convenience.
       Note: The other components just receive the 'data' attribute from the
-      provider. The sort panel gets the sort value
+      provider. The sort panel gets the 'sort' value. This is an abuse of the
+      provider, no doubt as this has been designed to pass two values down,
+      but some may only want one. The HOC handles dispatching of the 'data'
+      value.
      */}
     <SortPanelConsumer comparators={comparators} />
     <BulletedListConsumer />
