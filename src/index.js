@@ -28,7 +28,7 @@ const initialProps = {
 
 const App = ({ data, comparators }) => (
   <div className="App">
-    <h2>Provider Example</h2>
+    <h2>Context Example</h2>
     <ContextExample data={data} comparators={comparators} />
     <h2>FaaC Example</h2>
     <FaacExample data={data} comparators={comparators} />
